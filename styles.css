@@ -1,0 +1,112 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow: hidden; /* Impede a barra de rolagem horizontal */
+}
+
+.game {
+    width: 100%;
+    height: 100vh;
+    border-bottom: 30px solid rgb(146, 100, 57);
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+    background: url('Imagens/background.png') repeat-x;
+    animation: background-move 20s linear infinite;
+}
+
+@keyframes background-move {
+    from { background-position: 0 0; }
+    to { background-position: -1000px 0; }
+}
+
+.mario {
+    width: 150px;
+    position: absolute;
+    bottom: 0;
+    left: 50px;
+}
+
+.jump {
+    animation: jump 500ms ease-out;
+}
+
+@keyframes jump {
+    0% { bottom: 0; }
+    40% { bottom: 180px; }
+    50% { bottom: 180px; }
+    60% { bottom: 180px; }
+    100% { bottom: 0; }
+}
+
+.pipe {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 80px;
+    animation: pipe-animation 1.5s infinite linear;
+}
+
+@keyframes pipe-animation {
+    from { right: -80px; }
+    to { right: 100%; }
+}
+
+.game-over {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.7);
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    z-index: 10;
+}
+
+.game-over h1 {
+    color: red;
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.start {
+    background: green;
+    border-radius: 10px;
+    color: rgb(171, 213, 0);
+    font-weight: bold;
+    font-size: 1.5rem;
+    border: none;
+    padding: 1rem;
+    cursor: pointer;
+    z-index: 1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.start:hover {
+    border: 2px solid green;
+    background: none;
+    color: green;
+}
+
+.nuvem { /* Estilo para a nuvem */
+    width: 550px;
+    position: absolute;
+    top: 50px;
+    animation: nuvem-animation 20s infinite linear;
+}
+
+@keyframes nuvem-animation {
+    from { left: -550px; }
+    to { left: 100%; }
+}

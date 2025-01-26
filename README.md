@@ -1,0 +1,6 @@
+![nuvem](https://github.com/user-attachments/assets/9a60da8c-7919-4ad3-ad75-e6f7d1885ba1)
+![nuvem](https://github.com/user-attachments/assets/7247050e-57bc-447b-b92a-b66d1ca565f2)
+![mario](https://github.com/user-attachments/assets/27d3aa10-d481-4f6f-a3cd-dee8ef91aaa6)
+![game over](https://github.com/user-attachments/assets/568450cf-8775-407b-b8f6-dd49dc84457b)
+![cano](https://github.com/user-attachments/assets/2e3d511b-cc59-4f1e-8e61-683a4a7e41a0)
+![background png](https://github.com/user-attachments/assets/a3b2145f-02cf-4459-9ef3-4db713f0ccaa)
